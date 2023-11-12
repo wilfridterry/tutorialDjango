@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static "polls/app.css" %}">
 </head>
 <body>
     {% if latest_question_list  %}
@@ -15,5 +18,7 @@
     {% else %}
         No polls are available
     {% endif %}
+
+    {% comment %} <img src="{% static "polls/img/hot-dog.avif" %}" alt="Hot Dog"> {% endcomment %}
 </body>
 </html>
